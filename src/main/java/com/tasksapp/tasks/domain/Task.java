@@ -17,12 +17,12 @@ public class Task {
     @Id
     @GeneratedValue
     private Long id;
-
     private String name;
-
     @JsonFormat(pattern = "MM/dd/yy")
     private LocalDate dueDate;
     private Boolean completed;
 
+    public Task() {
 
+    }
 }
