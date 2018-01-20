@@ -13,9 +13,9 @@ export class TasksListComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
-    this.tasks.push(new Task(1, "Task1", true, "01/01/2018"));
-    this.tasks.push(new Task(2, "Task2", true, "02/02/2018"));
-    this.tasks.push(new Task(3, "Task3", true, "03/02/2018"));
+    this.tasks.push(new Task(1, "Task1", true, "01/01/18"));
+    this.tasks.push(new Task(2, "Task2", false, "02/02/18"));
+    this.tasks.push(new Task(3, "Task3", false, "03/02/18"));
   }
 
   getDueDateLabel(task: Task){
