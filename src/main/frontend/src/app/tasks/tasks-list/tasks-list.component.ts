@@ -22,6 +22,9 @@ export class TasksListComponent implements OnInit {
                   this.tasks = task;
               }, (error) => console.log(error)
           );
+
+
+      this.taskService.onTaskAdded.subscribe((task: Task) => this.tasks.push(task));
     // this.tasks.push(new Task(1, "Task1", true, "01/01/18"));
     // this.tasks.push(new Task(2, "Task2", false, "02/02/18"));
     // this.tasks.push(new Task(3, "Task3", false, "03/02/18"));
