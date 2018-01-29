@@ -13,7 +13,6 @@ export class TasksAddComponent implements OnInit {
   addTaskValue : string = null;
 
   constructor(private taskService: TaskService) {
-
   }
 
   ngOnInit() {
